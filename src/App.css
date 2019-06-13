@@ -1,33 +1,302 @@
-.App {
+#short_Bio{
+  position: relative;
   text-align: center;
+  margin: 70px;
+  padding: 20px; 
+  background-color: white;
+  border-radius: 5px;
+  flex-flow: row wrap;
+  box-shadow: 10px 10px 5px grey;
+  animation-name: sideSlide;
+  animation-duration: 4s;
+  
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+#NaviBar{
+  
+  border-radius: 0%;
+  animation-name: UpDown;
+  position: relative;
+  animation-duration: 2s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+#openingImg{
+  
+  
+  animation: flip-scale-2-ver-right 0.5s linear both;
+  position: center;
+  animation-duration: 700ms;
+  animation-fill-mode: forwards; 
+  animation-timing-function: ease-in-out;
+  animation-delay: 500ms;
+  border-radius: 10%;
+  width: 400px;
+  height: 400px;
+  box-shadow: 10px 10px 5px grey;
+  
+  
+ 
+}
+#contactContainer{
+  animation-name: wiggle;
+  position: relative;
+  animation-duration: 700ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  box-shadow: 10px 10px 10px 5px grey;
+
+}
+#Projects{
+  text-align: center;
+  animation-name: LeftsideSlide;
+  animation-duration: 8s;
+
+}
+#Project1{
+  padding-top: 25px;
+  font-size: 50px;
+  color: rgba(255,255,255,.3);
+  background: #1a1a1a;
+  text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+}
+#Project1:hover{
+  
+  
+ 
+  animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#Project1.a:hover{
+  
+  text-decoration: none;
+ 
+  animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#Project2{
+  padding-top: 25px;
+  color: rgba(255,255,255,.3);
+  background: #1a1a1a;
+  text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+  text-align: center;
+  font-size: 50px;
+ 
+}
+#Project2:hover{
+  animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#Project2.a:hover{
+  animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#Project3{
+  padding-top: 25px;
+  font-size: 50px;
+  color: rgba(255,255,255,.3);
+  background: #1a1a1a;
+  text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+  text-align: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius:20px; 
+}
+
+#Project3:hover{
+  animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#Project3.a:hover{
+  animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+/* ----------------------------------------------
+ * ----------------------------------------
+ * animation flip-scale-2-ver-left
+ * ----------------------------------------
+ */
+ @keyframes flip-scale-2-ver-right {
+  0% {
+    transform: translateX(0) rotateY(0) scale(1);
+    transform-origin: 100% 50%;
+  }
+  50% {
+    transform: translateX(50%) rotateY(-90deg) scale(2);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: translateX(100%) rotateY(-180deg) scale(1);
+    transform-origin: 0% 50%;
+  }
+}
+@keyframes flip-scale-2-ver-left {
+  0% {
+    -webkit-transform: translateX(0) rotateY(0) scale(1);
+            transform: translateX(0) rotateY(0) scale(1);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+  }
+  50% {
+    -webkit-transform: translateX(-50%) rotateY(90deg) scale(2);
+            transform: translateX(-50%) rotateY(90deg) scale(2);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  100% {
+    -webkit-transform: translateX(-100%) rotateY(180deg) scale(1);
+            transform: translateX(-100%) rotateY(180deg) scale(1);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+  }
+}
+@-webkit-keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+            transform: translateZ(50px);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+            transform: translateZ(50px);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+/* The animation code */
+@keyframes sideSlide {
+  0%   {opacity: 0;;left:0px; top:0px;}  
+  100% {opacity: 100%;;left:0px; top:0px;}
+}
+
+@keyframes UpDown{
+  0%{left:0px; top:-100px;}
+  100%{left:0px; top:0px;}
+}
+@keyframes Shrink{
+  0%{width: 100%; height: 100%;top: -30px;}
+  100%{width: 25vw; height: 25vw; border-radius: 100%;}
+  
+}
+@keyframes wiggle {
+  0% {transform: rotate(10deg);}
+  25% {transform: rotate(-10deg);}
+  50% {transform: rotate(20deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
+@keyframes LeftsideSlide {
+  0%   {opacity: 0;;left:1000px; top:0px;}
+  75%{left:0px; top:0px;}
+  100% {opacity: 100%;}
+}
+/* initialize flexbox container and flexbox items */
+.fc > * {
+  
+  margin: 10px;
+  padding: 20px; 
+  background-color: white;
+  border-radius: 10px;
+  
+}
+
+/* initialize flexbox container and flexbox items */
+.fc { 
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: row wrap;
+}
+.fc > * { 
+  flex: 1; 
+}
+/* header and footer should be full width */
+.fc header,
+.fc footer {
+  
+  flex: 0 1 100vw;
+  text-align: center; 
+}
+.fc { min-height: calc(100vh - 200px); } 
+
+.fc main{
+   
+    max-height: auto;
+    min-width: 250px;
+    max-width: auto;
+    
+    
+}
+.fc main h3{
+
+    text-align: center;
+    font-size-adjust: 0.58;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
+.fc aside{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    width: auto;
+    padding: 4px;
+    padding-top: 20px;
+    text-align: center;
+    max-width: 400px;
+    max-height: 400px;
+    min-height: 250px;
+    min-width: 250px;
+    padding-left: 20px;
 }
+    
+.fc section{
+
+    text-align: left;
+    max-width: 270px;
+    max-height: 350px;
+    min-width: 250px;
+    overflow: hidden;
+
+}
+.fc section h2{
+
+    text-align: center;
+
+}
+/* size header and footer to be full width and 100px tall each */
+
+footer {
+  
+text-align: center;
+box-sizing: border-box;
+width: 100vw;
+height: 100px;
+
+} 
